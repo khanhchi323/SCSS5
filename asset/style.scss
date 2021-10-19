@@ -1,0 +1,100 @@
+@use 'variables' ;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-style: normal;
+    font-family: Heebo;
+}
+.menu {
+    text-align: right;
+}
+.menu__nav {
+    display: inline-block;
+    text-align: right;
+    padding: 27px 60px;
+    font-size: 20px;
+
+    & a{
+        text-decoration: none;
+        color: $Color2;
+        padding-left: 60px;
+    }
+    
+    & .set-color {
+        color: $Color1;
+    }
+}
+
+main {
+    padding: 0 20%;
+    margin: 25px 0 58px  ;
+
+    & img {
+        margin: 0  18px  48px 0;
+    }
+
+    & b {
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700px;
+        line-height: 44px;
+    }
+
+    & p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .notion {
+        margin: 16px 0 18px 0 ;
+    
+        & button {
+            color: #FFF;
+            background: $Color3;
+            border-radius: 16px;
+            border: 2px solid ;
+            margin-right: 26px;
+            padding: 2px 10px;
+            font-size: 18px;
+            font-weight: 800px;
+        }
+
+        & span {
+            font-size: 20px;
+            color: $Color4;
+        }
+    }
+}
+
+.container {
+    display: flex;
+    margin: 44px 0 48px;
+    border-bottom: 1px solid $line;
+}
+.container__hide {
+    display: flex;
+    margin: 44px 0 48px;
+    border-bottom: 1px solid #000;
+}
+.container__appear {
+    display: flex;
+    margin: 44px 0 48px;
+    border-bottom: 1px solid $line;
+}
+
+footer {
+    text-align: center;
+    margin-top: 58px;
+    padding: 51px 0 54px ;
+
+    & .logo {
+        & img {
+            padding-left:  20px;
+        }
+    }
+}
